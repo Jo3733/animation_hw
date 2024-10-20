@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: #bac34e;
+    margin: 20px;
+    animation: anim 2s 1s infinite alternate;
+}
+
+@keyframes anim{
+    from {
+        transform: none;
+        background-color: #bac34e;
+    }
+    to{
+        transform: translate(1100px, calc(20px - 74vh)) rotate(360deg) scale(0.5);
+        background-color: blueviolet;
+    }
+}
